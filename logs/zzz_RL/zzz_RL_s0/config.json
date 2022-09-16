@@ -1,0 +1,163 @@
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            64,
+            64
+        ]
+    },
+    "actor_critic":	"MLPActorCritic",
+    "clip_ratio":	0.2,
+    "env_fn":	{
+        "<LaikagoEnv instance>":	{
+            "RoboID":	1,
+            "_np_random":	"RandomNumberGenerator(PCG64)",
+            "action_space":	{
+                "Box([-0.52  0.   -1.8  -0.52  0.   -1.8  -0.52  0.   -1.8  -0.52  0.   -1.8 ], [ 0.52  1.04 -0.52  0.52  1.04 -0.52  0.52  1.04 -0.52  0.52  1.04 -0.52], (12,), float32)":	{
+                    "_np_random":	null,
+                    "_shape":	[
+                        12
+                    ],
+                    "bounded_above":	"[ True  True  True  True  True  True  True  True  True  True  True  True]",
+                    "bounded_below":	"[ True  True  True  True  True  True  True  True  True  True  True  True]",
+                    "dtype":	"float32",
+                    "high":	"[ 0.52  1.04 -0.52  0.52  1.04 -0.52  0.52  1.04 -0.52  0.52  1.04 -0.52]",
+                    "high_repr":	"[ 0.52  1.04 -0.52  0.52  1.04 -0.52  0.52  1.04 -0.52  0.52  1.04 -0.52]",
+                    "low":	"[-0.52  0.   -1.8  -0.52  0.   -1.8  -0.52  0.   -1.8  -0.52  0.   -1.8 ]",
+                    "low_repr":	"[-0.52  0.   -1.8  -0.52  0.   -1.8  -0.52  0.   -1.8  -0.52  0.   -1.8 ]"
+                }
+            },
+            "force":	100,
+            "high_action_0":	0.52,
+            "high_action_1":	1.04,
+            "high_action_10":	1.04,
+            "high_action_11":	-0.52,
+            "high_action_2":	-0.52,
+            "high_action_3":	0.52,
+            "high_action_4":	1.04,
+            "high_action_5":	-0.52,
+            "high_action_6":	0.52,
+            "high_action_7":	1.04,
+            "high_action_8":	-0.52,
+            "high_action_9":	0.52,
+            "initial_action":	[],
+            "is_good_view":	false,
+            "is_render":	false,
+            "jointDirections":	[
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "jointIds":	[
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "jointOffsets":	[
+                0,
+                -0.7,
+                0.7,
+                0,
+                -0.7,
+                0.7,
+                0,
+                -0.7,
+                0.7,
+                0,
+                -0.7,
+                0.7
+            ],
+            "low_action_0":	-0.52,
+            "low_action_1":	0,
+            "low_action_10":	0,
+            "low_action_11":	-1.8,
+            "low_action_2":	-1.8,
+            "low_action_3":	-0.52,
+            "low_action_4":	0,
+            "low_action_5":	-1.8,
+            "low_action_6":	-0.52,
+            "low_action_7":	0,
+            "low_action_8":	-1.8,
+            "low_action_9":	-0.52,
+            "maxVelocity":	10,
+            "n_sim_steps":	1,
+            "observation_space":	{
+                "Box(-1.0, 1.0, (14,), float32)":	{
+                    "_np_random":	null,
+                    "_shape":	[
+                        14
+                    ],
+                    "bounded_above":	"[ True  True  True  True  True  True  True  True  True  True  True  True\n  True  True]",
+                    "bounded_below":	"[ True  True  True  True  True  True  True  True  True  True  True  True\n  True  True]",
+                    "dtype":	"float32",
+                    "high":	"[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]",
+                    "high_repr":	"1.0",
+                    "low":	"[-1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1.]",
+                    "low_repr":	"-1.0"
+                }
+            },
+            "sleep_t":	0.004166666666666667,
+            "startOri":	[
+                1.5707963267948966,
+                0,
+                0
+            ],
+            "startPos":	[
+                0,
+                0,
+                0.5
+            ],
+            "step_counter":	0
+        }
+    },
+    "epochs":	5,
+    "exp_name":	"zzz_RL",
+    "gamma":	0.99,
+    "lam":	0.97,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f155d5c4710>":	{
+            "epoch_dict":	{},
+            "exp_name":	"zzz_RL",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"./logs/zzz_RL/zzz_RL_s0",
+            "output_file":	{
+                "<_io.TextIOWrapper name='./logs/zzz_RL/zzz_RL_s0/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"zzz_RL",
+        "output_dir":	"./logs/zzz_RL/zzz_RL_s0"
+    },
+    "max_ep_len":	1000,
+    "pi_lr":	0.0003,
+    "pretrain":	null,
+    "save_freq":	10,
+    "seed":	0,
+    "steps_per_epoch":	200,
+    "target_kl":	0.01,
+    "train_pi_iters":	80,
+    "train_v_iters":	80,
+    "vf_lr":	0.001
+}
